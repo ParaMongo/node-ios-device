@@ -150,10 +150,10 @@ chownr@^1.0.1:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.2.tgz#a18f1e0b269c8a6a5d3c86eb298beb14c3dd7bf6"
   integrity sha512-GkfeAQh+QNy3wquu9oIZr6SS5x7wGdSgNQvD10X3r+AZr1Oys22HW8kAmDMvNg2+Dm0TeGaEuO8gFwdBXxwO8A==
 
-cli-kit@^0.11.2:
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/cli-kit/-/cli-kit-0.11.2.tgz#7d22ad03b074833e5265de3454f8e28400ba76be"
-  integrity sha512-3j58Q9wq+wnyOIt0gCxmNIqpc2t7w+F3azVcn1uKogKS2bhfnbS0QNTwdzK34wVDmIm7qxbfr2KW6sv0/01XvA==
+cli-kit@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/cli-kit/-/cli-kit-0.12.1.tgz#d643afcb99e56f9f320d4070c9af4331110f9db7"
+  integrity sha512-PK3iTE/I1CjDfzS7InKalyqTbPuJPa9JFnCXXYBLT9s4GjLM1IbIksulCL8KryHo12xXEVcf6Add+Kuq63MawQ==
   dependencies:
     argv-split "^2.0.1"
     fast-levenshtein "^2.0.6"
@@ -162,10 +162,10 @@ cli-kit@^0.11.2:
     lodash.camelcase "^4.3.0"
     pkg-dir "^4.2.0"
     pluralize "^8.0.0"
-    semver "^6.2.0"
-    snooplogg "^2.1.0"
-    source-map-support "^0.5.12"
-    which "^1.3.1"
+    semver "^6.3.0"
+    snooplogg "^2.3.2"
+    source-map-support "^0.5.16"
+    which "^2.0.2"
 
 cliui@^4.0.0:
   version "4.1.0"
@@ -649,7 +649,7 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-nanobuffer@^1.1.4:
+nanobuffer@^1.1.4, nanobuffer@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/nanobuffer/-/nanobuffer-1.1.5.tgz#2da4b706f4627c298fb4610eac35ca8fa2c9b174"
   integrity sha512-zhDz+zPssav2UCIBb4GhzoFq6+DupybuOR9am44XmpWafRBLNficoDMhhBKM2Q+2IZG2SqL6eC7KWf05qVsghA==
@@ -905,7 +905,7 @@ semver@^5.4.1, semver@^5.5.0, semver@^5.7.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
-semver@^6.2.0:
+semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
@@ -943,10 +943,29 @@ snooplogg@^2.1.0:
     source-map-support "^0.5.12"
     supports-color "^7.0.0"
 
+snooplogg@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/snooplogg/-/snooplogg-2.3.2.tgz#f0aa6ded24a50b3b4f8ae0e46054702fcb35d226"
+  integrity sha512-efUagxabWrrRLoNpSfRkWh2jpzUuwjxOOSK2q7791ElB8fHQpDmrJtUBQ8kE3c7M2F28nOBpUuB0tKkMceHqIw==
+  dependencies:
+    bryt "^1.0.1"
+    chalk "^2.4.2"
+    nanobuffer "^1.1.5"
+    source-map-support "^0.5.13"
+    supports-color "^7.0.0"
+
 source-map-support@^0.5.12:
   version "0.5.13"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.13.tgz#31b24a9c2e73c2de85066c0feb7d44767ed52932"
   integrity sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map-support@^0.5.13, source-map-support@^0.5.16:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
+  integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -1099,10 +1118,17 @@ which-module@^2.0.0:
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
   integrity sha1-2e8H3Od7mQK4o6j6SzHD4/fm6Ho=
 
-which@1.3.1, which@^1.2.9, which@^1.3.1:
+which@1.3.1, which@^1.2.9:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
   integrity sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==
+  dependencies:
+    isexe "^2.0.0"
+
+which@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
+  integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
 
