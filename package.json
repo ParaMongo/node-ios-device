@@ -36,7 +36,7 @@
   "dependencies": {
     "cli-kit": "^0.13.0",
     "napi-macros": "^2.0.0",
-    "node-gyp-build": "^4.2.0",
+    "node-gyp-build": "^4.2.1",
     "snooplogg": "^2.3.3"
   },
   "devDependencies": {
